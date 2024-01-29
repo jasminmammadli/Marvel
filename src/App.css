@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+header {
+  padding: 50px 0;
+}
+main {
+  padding: 0 0 45px;
+}
+.head-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.logo h1 {
+  font: 700 28px "Roboto Condensed", sans-serif;
+}
+.logo h1 span {
+  color: #9f0013;
+}
+.links a {
+  font: 700 24px "Roboto Condensed", sans-serif;
+  color: #000;
+}
+.slash {
+  margin: 0 8px;
+  font: 700 24px "Roboto Condensed", sans-serif;
+}
+.active {
+  color: #9f0013 !important;
+}
+.random-character {
+  margin: 0 0 50px;
+}
+.width {
+  width: 100% !important;
+}
+.character {
+  display: flex;
+  padding: 35px 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 20px;
+  gap: 30px;
+}
+.character-content .character-name {
+  font: 700 22px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 10px;
+}
+.character-img {
+  width: 40%;
+}
+.character-img img {
+  width: 100%;
+}
+.character-content {
+  width: 57%;
+}
+.character-content .character-info {
+  font: 400 14px/1.4 "Roboto Condensed", sans-serif;
+  margin: 0 0 13px;
+}
+.btns a {
+  text-transform: uppercase;
+  clip-path: polygon(10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%, 0 25%);
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  width: 101px;
+  padding: 11px 0;
+  color: #fff;
+}
+.btns a:first-child {
+  margin: 0 30px 0 0;
+  background-color: #9f0013;
+}
+.btns a:last-child {
+  background-color: #5c5c5c;
+}
+.choose-character {
+  box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 20px;
+  background-color: #232222;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.choose-character p {
+  font: 700 24px/28.13px "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.choose-character button {
+  text-transform: uppercase;
+  clip-path: polygon(10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%, 0 25%);
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  width: 101px;
+  padding: 11px 0;
+  color: #fff;
+  background-color: #9f0013;
+  margin: 13px 0 0;
+}
+.characters-card {
+  background-color: #232222;
+  margin: 0 0 30px;
+  transition: 0.5s;
+}
+.char-card-img {
+  aspect-ratio: 1/1;
+}
+.characters-card img {
+  width: 100%;
+  height: 100%;
+}
+.characters-card p {
+  font: 700 22px/25.78px "Roboto Condensed", sans-serif;
+  color: #fff;
+  padding: 15px 15px 70px;
+}
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+.card-active {
+  box-shadow: #9f0013 5px 5px 20px;
+  transform: translateY(-10px);
+}
+.sidebar-info {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 0 30px;
+}
+.sidebar-img-wrapper {
+  display: flex;
+  gap: 25px;
+}
+.sidebar-img-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar-btns a {
+  text-transform: uppercase;
+  clip-path: polygon(10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%, 0 25%);
+  text-align: center;
+  border: 0;
+  width: 101px;
+  padding: 11px 0;
+  color: #fff;
+}
+.sidebar-btns a:first-child {
+  background-color: #9f0013;
+}
+.sidebar-btns a:last-child {
+  background-color: #5c5c5c;
+}
+.sidebar-character-name {
+  font: 700 22px/25.78px "Roboto Condensed", sans-serif;
+}
+.sidebar-comics-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar-comics-section p {
+  font: 400 14px/16.41px "Roboto Condensed", sans-serif;
+  box-shadow: #00000040 0 4px 4px;
+  padding: 4px 10px 3px;
+  transition: 0.4s;
+}
+.sidebar-comics-section p:hover {
+  background-color: #9f0013;
+  color: #fff;
+}
+.text-comics {
+  font: 700 18px/21.09px "Roboto Condensed", sans-serif;
+}
+.sidebar-img {
+  width: 40%;
+}
+.sidebar img {
+  width: 100%;
+}
+.sidebar-search {
+  box-shadow: #00000040 0 0 20px;
+  padding: 25px;
+}
+.search-content {
+  font: 700 18px/21.09px "Roboto Condensed", sans-serif;
+  margin: 0 0 18px;
+}
+.inp-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.search-input input {
+  box-shadow: #00000040 0 4px 4px;
+  border: 0;
+  padding: 10px 10.45px;
+  width: 250px;
+  display: inline-block;
+  margin: 0 24px 0 0;
+  outline: none;
+}
+.search-input button {
+  text-transform: uppercase;
+  clip-path: polygon(10% 0, 100% 0, 100% 75%, 90% 100%, 0 100%, 0 25%);
+  text-align: center;
+  border: 0;
+  width: 101px;
+  padding: 11px 0;
+  color: #fff;
+  background-color: #9f0013;
+}
+.message-text {
+  margin: 15px 0 0 0;
+}
+.message-text {
+  font: 700 18px/21.09px "Roboto Condensed", sans-serif;
+}
+
+.skeleton {
+  box-shadow: #00000040 0 0 20px;
+  padding: 25px;
+}
+.skeleton-flex {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 15px;
+}
+.skeleton-img {
+  flex-shrink: 0;
+}
+.skeleton-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.skeleton-head-content {
+  font: 700 18px/21.09px "Roboto Condensed", sans-serif;
+  margin: 0 0 30px;
+  text-align: center;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px 0 45px;
+  background-color: #232222;
+  margin: 0 0 50px;
+}
+.avengers {
+  width: 20%;
+}
+.avengers-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.avengers-text p {
+  font: 700 24px/28.13px "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+.caracter-info-img img {
+  width: 100%;
+}
+.avengers-caracter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.caracter-info-content p:first-child {
+  font: 700 22px/25.78px "Roboto Condensed", sans-serif;
+  margin: 0 0 25px;
+}
+.caracter-info-content p:last-child {
+  font: 400 18px/21.09px "Roboto Condensed", sans-serif;
+}
+.comics-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.comicImg {
+  height: 460px;
+  margin: 0 0 7px;
+  box-shadow: #00000040 5px 5px 20px;
+}
+.comicCard img {
+  width: 100%;
+  height: 100%;
+}
+.comic-title,.comic-price{
+  font: 700 14px/16.41px "Roboto Condensed", sans-serif;
+  margin: 7px 0;
+}
+.comic-title{color: #000;}
+.comic-price{color: #00000099;}
+.detail-img img{
+  width: 100%;
+}
+.detail-content{
+  margin: 20px 0 0;
+}
+.detail-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 25px;
+}
+.detail-title p{
+  font: 700 22px/25.78px "Roboto Condensed", sans-serif;
+  width: 70%;
+}
+.detail-title a{
+  color: #000000;
+  font: 700 18px/21.09px "Roboto Condensed", sans-serif;
+}
+.detail-card-price{
+  font: 700 24px/28.13px "Roboto Condensed", sans-serif;
+  color: #9f0013;
+}
+.detail-info{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 0;
+  }
+  .comics-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .detail-section{
+    display: flex;
+    justify-content: space-between;
+  }
+  .detail-img{width: 30%;}
+  .detail-content{width: 67%; margin: 0;}
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cards-data {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cards-wrapper {
+    width: 62%;
+  }
+  .card-info {
+    width: 35%;
+  }
+  .avengers-caracter-info {
+    flex-direction: row;
+  }
+  .comics-card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  .detail-info p:first-child{
+    width: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .random-character {
+    display: flex;
+  }
+  .character,
+  .choose-character {
+    width: 50%;
+  }
+  .comics-card-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
