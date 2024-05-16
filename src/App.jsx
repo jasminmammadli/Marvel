@@ -20,6 +20,7 @@ function App() {
       )
       .then((data) => {
         setData(data.data.data.results);
+        console.log(data.data.data.results);
       });
 
       //Comics API
